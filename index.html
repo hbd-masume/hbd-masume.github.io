@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#141852">
+  <meta name="msapplication-navbutton-color" content="#141852">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#141852">
+  <title>Happy Birthday to You!!!</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <meta name="title" content="Happy Birthday to You">
+  <meta name="description" content="Wishing you a very Happy Birthday Dear">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Happy Birthday to you">
+  <meta property="og:description" content="Wishing you a very Happy Birthday Dear">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --readTime: 15s
+    }
+  </style>
+  <link rel="stylesheet" href="css.css">
+  <script src="p5.js"></script>
+<script src="p5.dom.js"></script>
+<script src="p5.sound.js"></script>
+  
+</head>
+
+<body> 
+  <audio class="burst-aud">
+    <source src="pop.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+  <audio class="blast-aud">
+    <source src="blast.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+  <audio class="hbd-aud" __idm_id__="2064385">
+    <source src="hbd.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio> <audio
+    class="switch-aud" __idm_id__="2064386">
+    <source src="switch.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+  <audio class="door-aud">
+    <source src="door.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio> <audio
+    class="haunt-aud" __idm_id__="2064387">
+    <source src="haunted-bgm.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+  <div class="content"> <img src="flag-right.png" alt="flags" class="flag flag--c-left"> <img
+      src="flag-left.png" alt="flags" class="flag flag--left"> <img src="flag-left.png" alt="flags"
+      class="flag flag--c-right"> <img src="flag-right.png" alt="flags" class="flag flag--right"> <img
+      src="balloon-left.png" alt="balloon-left" class="balloon balloon--left"> <img
+      src="balloon-right.png" alt="balloon-right" class="balloon balloon--right">
+    <div class="frame">
+      <div class="img-back">
+        <div class="bd-pic"></div> <img class="cap" src="bday-cap.svg" alt=""> <img class="confetti"
+          src="confetti.svg" alt=""> <img class="cake" src="cake.svg" alt="">
+        <div class="velas">
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+        </div>
+      </div>
+      <div class="HBD-text" dir="rtl">
+        <p class="HBD">برات بهترین آرزوها رو دارم ❤️</p>
+        <p class="nickname">عبداله</p>
+      </div>
+    </div>
+    <div class="frame frame2">
+      <div class="scroll">
+        <div class="text" dir="rtl">
+          <p>تولدت مبارک معصومه عزیز 
+            </p><br><p>
+            امیدوارم که امروز برات یه روز خاص بوده باشه
+            </p><p> 
+            پر از لحظه های خوش و خنده 
+            </p><p>
+            و هدیه های خیلی خوبی هم گرفته باشی😉
+            </p><p>
+           
+          <p><br></p>
+          همیشه خندون و سبز و سلامت باشی...❤️
+          <p><br></p>
+        </div>
+      </div>
+    </div>
+    <div class="flash"></div>
+    <div class="giftroom" dir="rtl">
+      <p class="gift-text">نگاه کن! یه هدیه هم اینجاست.</p>
+      <p class="gift-text">بازش کن ببین چی توشه...</p>
+    </div>
+    <div class="empty-room" id="room" dir="rtl">
+      <p class="room-text">وووو! یه چیزی اینجا عجیبه!</p>
+      <p class="room-text">کلی بادکنک اینجا داریم</p>
+      <p class="room-text">بیا بادکنک ها رو بترکونیم....</p>
+      <p class="counter" style="display: none; height: 0; font-size: 20;">0</p>
+    </div>
+    <div class="darkroom" dir="rtl">
+      <p class="bb-text read">هی!</p>
+      <p class="bb-text">چرا اینجا خیلی تاریکه؟</p>
+      <p class="bb-text">می تونی چراغ رو روشن کنی؟</p>
+    </div>
+    <div class="btn switch" style="display: none;"></div>
+    <div class="btn-ref" style="display: none;" dir="rtl">رو چراغ بزن</div>
+  </div>
+  <div id="speechify-screenshot-mode"
+    style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 2147483640; display: none;">
+  </div>
+  <div id="speechify-global-notifications"></div>
+  <div id="speechify-summarization-fullscreen-mode"
+    style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div>
+  <div id="speechify-shortcuts-prompt"></div>
+</body>
+<script src="index.js"></script>
+</html>
